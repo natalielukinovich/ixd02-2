@@ -9,12 +9,98 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 2.08rem;
+  font-weight: 300;
   color: #272727;
   margin: 0px;
+}
 
+.btn {
+  background-color: #272727;
+  color: #FFFFFF;
+  border-radius: 0rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4.2rem;
+  line-height: 4.6rem;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 1.6rem;
+}
+
+header {
+  background-color: #FBFAF9;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 1440px;
+  height: 69px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 1085px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+  margin-bottom: 0rem;
+}
+
+.hero-left ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 776px; 
+  margin-bottom: 0px;
+}
+
+.hero-left li {
+  min-width: 0;
+  margin-right: 2.2rem;
+}
+
+.hero-left li img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-right {
+  max-width: 25.4rem;
+  margin-left: 2.9rem;
+  margin-bottom: 0px;
+  margin-right: 2.2rem;
+}
+
+.hero-right p {
+  margin-top: 0px;
+  margin-bottom: 3rem;
+  height: 8.4rem;
+}
+
+.hero-right .btn {
+  margin-top: auto;
 }
 
 html {
@@ -25,7 +111,41 @@ html {
   margin-top: 0px;
 }
 
+img {
+  display: block; 
+  max-width: 100%;
+  height: auto;
+}
 
+.img-hero1 {
+  height: 498px;
+  width: 244px;
+  border-radius: 0px;
+}
+
+.img-hero2 {
+  height: 498px;
+  width: 244px;
+  border-radius: 0px;
+}
+
+.img-hero3 {
+  height: 498px;
+  width: 244px;
+  border-radius: 0px;
+}
+
+.input {
+  width: 34.7rem;
+  height: 3.7rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding-left: 1.9rem;
+  font-size: 1.4rem;
+  border: 1px solid #272727;
+  border-radius: 0px;
+  color: #272727
+}
 
 .modal {
   position: fixed;
@@ -33,11 +153,12 @@ html {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid #000000;
-  border-radius: 10px;
+  border: none;
+  border-radius: 0px;
   z-index: 10;
   background-color: #ffffff;
-  width: 500px;
+  width: 499px;
+  height: 577px;
   max-width: 80%;
 }
 
@@ -45,16 +166,13 @@ html {
   transform: translate(-50%, -50%) scale(1);
 }
 .modal-header {
-  padding: 10px 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #000000;
+  align-items: flex-start;
 }
 
-.modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+h2 {
+  font-size: 4.4rem;
+  font-weight: 500;
 }
 
 .modal-header .close-button {
@@ -62,24 +180,40 @@ html {
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: light;
+  color: #686868;
+  z-index: 10;
+  position: absolute;
+  top: 7px; 
+  right: 12px;
 }
 
 .modal-body {
-  padding: 10px 15px;
+  text-align: center;
+  margin-top: 3.85rem;
+}
+
+.modal-body p{
+  width: 34.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 1.6rem;
+}
+
+.modal-body a{
+  text-decoration: none;
+  color: #686868;
+  font-size: 1.4rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #FBFAF9;
+  width: 1085px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 1440px;
-  height: 69px;
 }
 
 nav ul {
@@ -90,10 +224,13 @@ nav ul {
 
 .nav-left li {
   padding-right: 4.5rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .nav-right li {
   padding-left: 2.2rem;
+  cursor: pointer;
 }
 
 #overlay {
@@ -111,6 +248,20 @@ nav ul {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.submit-btn {
+  background-color: #272727;
+  color: #FFFFFF;
+  border-radius: 0rem;
+  padding-left: 14.7rem;
+  padding-right: 14.7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.9rem;
 }
 
 ul {
