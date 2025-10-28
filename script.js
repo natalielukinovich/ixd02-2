@@ -34,3 +34,10 @@ function closeModal(modal) {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector(".modal");
+  setTimeout(() => {
+    openModal(modal);
+  }, 3000);
+});
