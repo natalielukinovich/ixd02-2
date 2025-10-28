@@ -165,8 +165,6 @@ img {
   color: #272727
 }
 
-
-
 .modal {
   position: fixed;
   top: 50%;
@@ -230,7 +228,7 @@ h2 {
   font-size: 1.4rem;
 }
 
-.modal-body h3 {
+.modal-body span {
   color: #686868;
   cursor: pointer;
   font-weight: 300;
