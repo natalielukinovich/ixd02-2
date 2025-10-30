@@ -62,7 +62,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 1085px;
+  max-width: 1085px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 9rem;
@@ -239,7 +240,8 @@ h2 {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 1085px;
+  max-width: 1085px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
