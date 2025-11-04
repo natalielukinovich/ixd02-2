@@ -79,31 +79,46 @@ header {
 }
 
 .hero-left li {
-  min-width: 0;
   margin-right: 2.2rem;
   position: relative;
-  overflow: hidden;
-}
-
-.hero-left li img {
-  width: 100%;
-  height: auto;
 }
 
 .hero-left li::after {
   content: "";
   position: absolute;
-  inset: 0;                      
-  background: rgba(251, 250, 249, 0.16); 
-  backdrop-filter: blur(6px);         
-  -webkit-backdrop-filter: blur(6px); 
-  transition: opacity .2s ease;
+  inset: 0;
+  background: rgba(251, 250, 249, 0.16);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   opacity: 1;
-  pointer-events: none;  
-}   
+  transition: opacity .2s ease;
+  pointer-events: none;
+}
 
-.hero-left li:hover::after{
+.hero-left li:hover::after {
   opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-left li img {
+  width: 100%;
+  height: auto;
 }
 
 .hero-right {
